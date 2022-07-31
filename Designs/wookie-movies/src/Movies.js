@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Movies({genres,movies}) {
   return (
     <div className="App">
-    <h1>Wookie movies</h1>
+    
     {
       genres.map((item) =>(
         <div key={item}>
@@ -16,7 +16,7 @@ function Movies({genres,movies}) {
                 if(inc){
                   return (
                     <Link to={`/movie/${elem.id}`} key={elem.id}>
-                        <div>
+                        <div className='bloc'>
                           <div>{elem.title}</div>
                           <img src={elem.backdrop} alt={elem.title}/>
                         </div>

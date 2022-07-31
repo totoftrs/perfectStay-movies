@@ -4,7 +4,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Movie from './Movie';
 import Movies from './Movies';
-
+import SearchMovie from './SearchMovie'
 
 
 const apiUrl = "https://wookie.codesubmit.io/movies";
@@ -43,6 +43,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <SearchMovie />
       <Routes>
         <Route path="/" element={<Movies genres={genres} movies={movies}/>} exact />
         <Route path="movie/:id" element={<Movie movies={movies}/>} />

@@ -1,17 +1,90 @@
+body{
+  background-color: #000;
+}
 .App {
   text-align: center;
+  color: #fff;
 }
 
 img{
   width: 20rem;
-  max-width: 100%;
+}
+.title{
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration-color: red;
+  text-decoration-line: underline;
+}
+header{
+  display: flex;
+  flex-direction: column;
 }
 .categories{
   font-size: 2rem;
   text-align: left;
   font-weight: bold;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 .container{
   display: flex;
+  gap: 1.5rem;
+  width: 95%;
+  margin: auto;
+  overflow-x: scroll;
+}
+.bloc{
+  position: relative;
+}
+.bloc:hover::before{
+  content: '';
+  position: absolute;
+  background-color: rgba(0,0,0 , 0.7);
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.bloc div{
+  position: absolute;
+  color: #fff;
+  font-size: 1.2rem;
+  left: 50%;
+  font-weight: bold;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+input{
+  border: red 1px solid;
+  width: 15rem;
+  padding: 10px;
+}
+.bloc1{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+}
+.bloc2{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+.bloc2 p{
+  color: red;
+}
+.wrapper-input {
+  position: relative;
+}
+
+.find-movie {
+  padding: 5px;
 }
