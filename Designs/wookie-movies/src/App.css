@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+img{
+  width: 20rem;
+  max-width: 100%;
+}
+.categories{
+  font-size: 2rem;
+  text-align: left;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+.container{
+  display: flex;
+}
