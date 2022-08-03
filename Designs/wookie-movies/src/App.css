@@ -88,3 +88,21 @@ input{
 .find-movie {
   padding: 5px;
 }
+
+.section {
+  display: flex;
+  color: #fff;
+  padding: 20px;
+}
+.container-info{
+  padding: 20px;
+}
+.title__movie{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.overview{
+  margin-top: 30px;
+}

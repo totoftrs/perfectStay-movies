@@ -28,7 +28,7 @@ function App() {
     }
   }
 
-  const array =[] 
+  const array= [] 
   for (var n of movies){
     var res = n.genres
     res.map(elem => {
@@ -45,7 +45,7 @@ function App() {
     <BrowserRouter>
       <SearchMovie />
       <Routes>
-        <Route path="/" element={<Movies genres={genres} movies={movies}/>} exact />
+        <Route path="/" element={<Movies genres={genres} movies={movies}/>} />
         <Route path="movie/:id" element={<Movie movies={movies}/>} />
       </Routes>
     </BrowserRouter>
